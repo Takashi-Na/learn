@@ -1,4 +1,4 @@
-require 'minruby'
+require "minruby"
 
 # 標準入力
 input_order = gets.chomp.split("'")
