@@ -12,23 +12,19 @@ tree = minruby_parse(formula)
 p tree
 
 
+# 最大単位を初期値とする
+unit = "kg"
 
+# 単位の変換
+if str_formula.include?("kg")
+  str_formula = str_formula.gsub(/kg/, "*1000")
+  unit = "kg"
+end
 
-
-
-# # 最大単位を初期値とする
-# unit = "kg"
-
-# # 単位の変換
-# if str_formula.include?("kg")
-#   str_formula = str_formula.gsub(/kg/, "*1000")
-#   unit = "kg"
-# end
-
-# if str_formula.include?("mg")
-#   str_formula = str_formula.gsub(/mg/, '/1000')
-#   unit = "mg"
-# end
+if str_formula.include?("mg")
+  str_formula = str_formula.gsub(/mg/, '/1000')
+  unit = "mg"
+end
 
 # # mg,kgにも反応してしまうため、gの単位変換は最後にする
 # if str_formula.include?("g")
