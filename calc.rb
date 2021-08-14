@@ -26,30 +26,30 @@ if str_formula.include?("mg")
   unit = "mg"
 end
 
-# # mg,kgにも反応してしまうため、gの単位変換は最後にする
-# if str_formula.include?("g")
-#   str_formula = str_formula.gsub(/g/, '*1')
-#   unit = "g" unless(unit == "mg")
-# end
+# mg,kgにも反応してしまうため、gの単位変換は最後にする
+if str_formula.include?("g")
+  str_formula = str_formula.gsub(/g/, '*1')
+  unit = "g" unless(unit == "mg")
+end
 
 
-# p str_formula
-# # num_parts = str_formula.split(/[+|-|*]/) # "/" を含めれていない
-# # units = str_formula.delete("0-9").split("")
-# # p num_parts
-# # p units
+p str_formula
+# num_parts = str_formula.split(/[+|-|*]/) # "/" を含めれていない
+# units = str_formula.delete("0-9").split("")
+# p num_parts
+# p units
 
-# int_formula = str_formula.gsub(/[0-9]/,to_i)
-# p int_formula
+int_formula = str_formula.gsub(/[0-9]/,to_i)
+p int_formula
 
-# # calcの処理
-# if order == "./calc"
-#   int_formula = str_formula.to_f
-#   if unit == "kg"
-#     # puts "#{int_formula}+unit"
-#   elsif unit == "g"
+# calcの処理
+if order == "./calc"
+  int_formula = str_formula.to_f
+  if unit == "kg"
+    # puts "#{int_formula}+unit"
+  elsif unit == "g"
 
-#   elsif unit == "mg"
+  elsif unit == "mg"
 
-#   end 
-# end
+  end 
+end
