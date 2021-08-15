@@ -42,14 +42,17 @@ p str_formula
 int_formula = str_formula.gsub(/[0-9]/,to_i)
 p int_formula
 
-# calcの処理
-if order == "./calc"
-  int_formula = str_formula.to_f
-  if unit == "kg"
-    # puts "#{int_formula}+unit"
-  elsif unit == "g"
 
-  elsif unit == "mg"
 
-  end 
-end
+
+# # calcの処理
+# if order == "./calc"
+#   int_formula = str_formula.to_f
+#   if unit == "kg"
+#     # puts "#{int_formula}+unit"
+#   elsif unit == "g"
+
+#   elsif unit == "mg"
+
+#   end 
+# end
