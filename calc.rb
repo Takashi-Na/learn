@@ -9,6 +9,9 @@ p order
 p formula
 
 # 単位を数字に変換
+if formula.include?("mg")
+  
+end
 
 # *,/を優先して計算しその後に+,-の計算を行う
 
