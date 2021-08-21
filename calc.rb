@@ -9,6 +9,7 @@ p order
 p formula
 
 # 単位を数字に変換
+# 別クラスを用いて変換するのが好ましい
 if formula.include?("mg")
   
 end
