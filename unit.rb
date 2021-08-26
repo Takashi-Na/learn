@@ -1,6 +1,8 @@
 # kg,g,mgを数字に変換したい
-class unit
-  kg
-  g
-  mg
+class change_unit
+  def units
+    kg
+    g
+    mg
+  end
 end
