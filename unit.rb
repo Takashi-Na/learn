@@ -1,5 +1,5 @@
-# kg,g,mgを数字に変換したい
 class unit
+  # 単位を数字に変換
   def unit
     kg
     g
