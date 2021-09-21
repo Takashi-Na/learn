@@ -1,6 +1,8 @@
 class calc < unit
-  # 標準入力
-  input_order = gets.chomp.split("'")
+  # # 標準入力
+  # input_order = gets.chomp.split("'")
+
+  # 標準入力ではなく、"./calc"が命令であることを認識するシステムが良い
 
   # 命令と式を変数に代入
   order = input_order[0]
